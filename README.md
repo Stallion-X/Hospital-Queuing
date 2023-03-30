@@ -14,3 +14,5 @@ A school assignment(experiment) for JSP, a simple hospital queuing Web system ma
 初学Web成果，十分简陋，连界面都是纯HTML手撸，一个人手撸了半个月，还是不太完善，放在这就当纪念一下了，有空可能还会来完善一下。
 
 数据库配置在/src/main/java/db/ConnBean.java（H2）和MsSQLConnBean.java（SQL Server）
+
+编码从Eclipse默认的GBK改为了UTF-8
