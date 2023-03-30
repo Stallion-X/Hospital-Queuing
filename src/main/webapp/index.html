@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<link rel="stylesheet" type="text/css" href="./css/login.css">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+<body translate="no" >
+  <div class="wrapper">
+  <form class="login" action="LoginServlet" method="post">
+  <input type="hidden" name="laction" value="login"/>
+    <p class="title">Log in</p>
+    <select name="type" id="selection">
+    <option id="default">请选择登录身份</option>
+	<option value="d">医生</option>
+	<option value="p">患者</option>
+	<option value="su">管理员</option>
+	</select>
+    <i class="fa fa-user"></i>
+    <input type="text" name="acc" placeholder="请先选择登录身份" id="inacc" autofocus/>
+    <i class="fa fa-user" id="i1"></i>
+    <input type="password" name="pwd" placeholder="请先选择登录身份" id="inpwd" />
+    <i class="fa fa-key"></i>
+    <a href="#">Forgot your password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a id="register_link" style="cursor:pointer;">Register</a>
+    <button id="btn">
+      <i class="spinner"></i>
+      <span class="state">Log in</span>
+    </button>
+  </form>
+   <form class="register" action="LoginServlet" method="post">
+   <input type="hidden" name="laction" value="register"/>
+    <p class="title">Patient Register</p>
+    <input type="text" name="acc" placeholder="Username" autofocus/>
+    <i class="fa fa-user"></i>
+    <input type="password" name="pwd" placeholder="Password" />
+    <i class="fa fa-key"></i>
+    <input type="text" name="pname" placeholder="Name"/>
+    <i class="fa fa-user"></i>
+    <select name="psex">
+	<option>请选择性别</option>
+	<option value="男">男</option>
+	<option value="女">女</option>
+	</select>
+    <i class="fa fa-user"></i>
+    <input type="text" name="page" placeholder="Age"/>
+    <i class="fa fa-user"></i>
+    <input type="text" name="pid" placeholder="ID"/>
+    <i class="fa fa-user"></i>
+    <input type="text" name="ptel" placeholder="Tel"/>
+    <i class="fa fa-user"></i>
+    <input type="text" name="pinfo" placeholder="Info"/>
+    <i class="fa fa-user"></i>
+    <a id="login_link" style="cursor:pointer;">Return Login</a>
+    <button id="btn2">
+      <i class="spinner"></i>
+      <span class="state">Register</span>
+    </button>
+  </form>
+  <footer id="foot">大作业小组-医院排队叫号系统-202012</footer>
+</div>
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+<script src='./js/jquery-3.6.0.min.js'></script>
+<script id="rendered-js" >
+/** 
+ * @author Stallion-X
+ */
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return null;
+}
+$(window).on("load",function() {
+	var isSuc = getQueryVariable("isSuc");
+	if (isSuc!=null&&isSuc==0) {
+		$('#btn').before($('<span style="color:red;font-size:10px;">登录失败！请检查用户名、密码或密钥是否正确</span>'));
+	}
+	
+});
+var working = false;
+var tempa = $('#inacc');
+var tempi = $('#i1');
+$('#btn').on('click', function (e) {
+  setTimeout("$('.login').submit()","4000");
+  e.preventDefault();
+  if (working) return;
+  working = true;
+  var $this = $('.login'),
+  $state = $this.find('button > .state');
+  $this.addClass('loading');
+  $state.html('Authenticating');
+  setTimeout(function () {
+    $this.addClass('ok');
+    $state.html('Welcome back!');
+    setTimeout(function () {
+      $state.html('Log in');
+      $this.removeClass('ok loading');
+      working = false;
+    }, 2000);
+  }, 2000);
+});
+$('#btn2').on('click', function (e) {
+	  setTimeout("$('.register').submit()","4000");
+	  e.preventDefault();
+	  if (working) return;
+	  working = true;
+	  var $this = $('.register'),
+	  $state = $this.find('button > .state');
+	  $this.addClass('loading');
+	  $state.html('Registering');
+	  setTimeout(function () {
+	    $this.addClass('ok');
+	    $state.html('Register Successful!');
+	    setTimeout(function () {
+	      $state.html('Register');
+	      $this.removeClass('ok loading');
+	      working = false;
+	    }, 2000);
+	  }, 2000);
+	});
+$('#register_link').click(function(){
+	$('.login').animate({right:'-100%'},400,function(){
+				$('.register').animate({right:'38%'});
+			});
+	$('#foot').css('padding-top','350px');
+});
+$('#login_link').click(function(){
+	$('.register').animate({right:'120%'},400,function(){
+				$('.login').animate({right:'0%'});
+			});
+	$('#foot').css('padding-top','50px');
+});
+$('#selection').change(function(){
+	$('#default').remove();
+	if ($('#selection option:selected').text()=="医生") {
+		$('#inpwd').before(tempi.get(0));
+		$('#i1').before(tempa.get(0));
+		$('#inacc').attr("placeholder","科室号");
+		$('#inpwd').attr("placeholder","管理员密钥");
+	}
+	else if ($('#selection option:selected').text()=="患者") {
+		$('#inpwd').before(tempi.get(0));
+		$('#i1').before(tempa.get(0));
+		$('#inacc').attr("placeholder","患者编号");
+		$('#inpwd').attr("placeholder","密码");
+	}
+	else if ($('#selection option:selected').text()=="管理员") {
+		$('#inpwd').attr("placeholder","管理员密钥");
+		$('#inacc').remove();
+		$('#i1').remove();
+	}
+})
+</script>
+</body>
+</html>

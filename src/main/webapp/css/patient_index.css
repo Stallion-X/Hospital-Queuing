@@ -1,0 +1,1577 @@
+nav .Inav {
+	width: 938px;
+}
+#modal {
+	visibility:hidden;
+	display:none;
+	}
+#account {
+	position:absolute;
+	top:60px;
+	left:1200px;
+	font-size:15px;
+}
+#account a {
+	border-radius:30px;
+}
+#account:hover {
+	background-color: rgb(237,239,240);
+}
+.table1 input {
+	border:none;
+	font-size:15px;
+}
+			table {
+				width: 90%;
+				background: #ccc;
+				margin: 10px auto;
+				border-collapse: collapse;/*border-collapse:collapse合并内外边距(去除表格单元格默认的2个像素内外边距*/	
+			}				
+			th,td {
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				border: 1px solid #ccc;
+			}		
+			th {
+				background: #eee;
+				font-weight: normal;
+			}		
+			tr {
+				background: #fff;
+			}		
+			tr:hover {
+				background: #cc0;
+			}		
+			td a {
+				color: #06f;
+				text-decoration: none;
+			}		
+			td a:hover {
+				color: #06f;
+				text-decoration: underline;
+			}
+#bkg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+  visibility:hidden;
+}
+#queueon span {
+  position: relative;
+  z-index: 300;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: transparent;
+  text-shadow:
+    0px 0px 1px rgba(255, 255, 255, .6),
+    0px 4px 4px rgba(0, 0, 0, .05);
+  letter-spacing: .2rem;
+}
+#bkg2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+  visibility:hidden;
+}
+#sign span {
+  position: relative;
+  z-index: 300;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: transparent;
+  text-shadow:
+    0px 0px 1px rgba(255, 255, 255, .6),
+    0px 4px 4px rgba(0, 0, 0, .05);
+  letter-spacing: .2rem;
+}
+.bannerBase {
+	height: 450px;
+	margin-top: 16px;
+	position: relative;
+	overflow: hidden;
+}
+.table1{
+	margin-left:250px;
+	position:absolute;
+	z-index:1000;
+}
+    .doctorsBase .table1 table {
+        width:100%;
+        margin:15px 0;
+        border:0;
+    }
+    .doctorsBase .table1 th {
+        background-color:#00A5FF;
+        color:#FFFFFF
+    }
+    .doctorsBase .table1,.table1 th,.table1 td {
+        font-size:0.95em;
+        text-align:center;
+        padding:4px;
+        border-collapse:collapse;
+    }
+    .doctorsBase .table1 th,.table1 td {
+        border: 1px solid #2087fe;
+        border-width:1px 0 1px 0;
+        border:2px inset #ffffff;
+    }
+    .doctorsBase .table1 tr {
+        border: 1px solid #ffffff;
+    }
+    .doctorsBase .table1 tr:nth-child(odd){
+        background-color:#aae1fe;
+    }
+    .doctorsBase .table1 tr:nth-child(even){
+        background-color:#ffffff;
+    }
+
+.lt-ie9 .bannerBase {
+	margin-top: 16px;
+}
+
+.bannerBase .Banners {
+	position: absolute;
+	top: 0px;
+	left: 257px;
+	height: 100%;
+	width: 980px;
+}
+
+.bannerBase .tools {
+	position: absolute;
+	right: 36px;
+	top: 0px;
+	height: 100%;
+	width: 256px;
+	background: url(../images/banner_bg.png);
+}
+
+.bannerBase .tools a {
+	position: absolute;
+	bottom: 188px;
+	display: block;
+	width: 34px;
+	height: 34px;
+}
+
+.bannerBase .tools .prev {
+	left: 35px;
+}
+
+.bannerBase .tools .next {
+	left: 81px;
+}
+
+.bannerBase .tools a:hover {
+	background: #978571;
+}
+
+.bannerBase .tools .text {
+	padding: 0px 30px;
+	font-size: 16px;
+	line-height: 22px;
+	position: absolute;
+	color: #FFF;
+	left: 0px;
+	top: 280px;
+}
+
+.AnimUl {
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+}
+
+.AnimUl li {
+	width: 100%;
+	height: 450px;
+	position: relative;
+}
+
+.AnimUl li img {
+	position: absolute;
+	top: 0px;
+	left: -18px;
+	width: 100%;
+	height: auto;
+	min-height: 450px;
+}
+
+.ulMark {
+	width: 180px;
+	height: auto;
+	position: absolute;
+	bottom: 68px;
+	left: 30px;
+}
+
+.ulMark li {
+	float: left;
+	height: 8px;
+	width: 8px;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-top: 5px;
+	background: #FFF;
+	border-radius: 50%;
+	-moz-opacity: .5;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+	-webkit-opacity: .5;
+}
+
+.ulMark li:hover, .ulMark li.on {
+	-moz-opacity: 1;
+	opacity: 1;
+	filter: alpha(opacity = 100);
+	-webkit-opacity: 1;
+}
+
+#BannerSwitch {
+	width: 10px;
+	height: 64px;
+	background: #bda179;
+	position: absolute;
+	left: -10px;
+	top: 188px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#BannerSwitch.hidden img {
+	transform: rotateZ(180deg);
+	-webkit-transform: rotateZ(180deg);
+	-moz-transform: rotateZ(180deg);
+}
+
+#BannerSwitch:hover {
+	background: #ff7544;
+	width: 32px;
+	left: -32px;
+}
+
+#BannerSwitch img {
+	left: 3px;
+	top: 28px;
+	position: absolute;
+}
+
+#BannerSwitch span {
+	color: #fff;
+	position: absolute;
+	width: 12px;
+	top: 13px;
+	left: 13px;
+	line-height: 19px;
+}
+
+.NewsBase {
+	margin-top: 14px;
+}
+
+.lt-ie9 .NewsBase {
+	margin-top: 14px;
+}
+
+.NewsBase span {
+	color: #6bcbca;
+}
+
+.NewsBase .tools {
+	float: left;
+	width: 256px;
+}
+
+.NewsBase .tools a {
+	display: block;
+	width: 124px;
+	height: 122px;
+	float: left;
+	background: #f1f1f1;
+	margin-top: 3px;
+	margin-right: 3px;
+	position: relative;
+}
+
+.NewsBase .tools a img {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -26px;
+}
+
+.NewsBase .tools a em {
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 17px;
+	left: 0px;
+}
+
+.NewsBase .tools a:hover img {
+	animation: tada .88s cubic-bezier(0.175, 0.885, 0.320, 1.5) 1;
+	-webkit-animation: tada .88s cubic-bezier(0.175, 0.885, 0.320, 1.5) 1;;
+	-moz-animation-name: tada .88s cubic-bezier(0.175, 0.885, 0.320, 1.5) 1;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.NewsBase .noticeBase {
+	width: 943px;
+	float: right;
+	margin-top: 3px;
+}
+
+.NewsBase .noticeBase .notice {
+	padding: 18px 28px;
+	background: #f1f1f1;
+	height: 211px;
+	width: 413px;
+	position: relative;
+}
+
+.NewsBase .noticeBase .notice01 {
+	float: left;
+}
+
+.NewsBase .noticeBase .notice02 {
+	float: right;
+}
+
+.NewsBase .notice01 .title {
+	background: url(../images/ico_025.jpg) left top no-repeat;
+	position: relative;
+	height: 64px;
+}
+
+.NewsBase .notice01 .title em {
+	position: absolute;
+	top: 6px;
+	left: 77px;
+	font-size: 16px;
+}
+
+.NewsBase .notice01 .title span {
+	position: absolute;
+	left: 77px;
+	top: 28px;
+}
+
+.NewsBase .notice02 .title {
+	background: url(../images/ico_026.jpg) left top no-repeat;
+	position: relative;
+	height: 64px;
+}
+
+.NewsBase .notice02 .title em {
+	position: absolute;
+	top: 6px;
+	left: 50px;
+	font-size: 16px;
+}
+
+.NewsBase .notice02 .title span {
+	position: absolute;
+	left: 50px;
+	top: 28px;
+}
+
+.NewsBase .noticeBase a.more {
+	display: block;
+	position: absolute;
+	width: 96px;
+	height: 34px;
+	z-index: 100;
+	line-height: 34px;
+	top: 25px;
+	text-align: center;
+	right: 0px;
+	color: #FFF;
+	background: #bda179;
+}
+
+.NewsBase .noticeBase a.more:hover {
+	background: #ff7544;
+}
+
+.NewsBase .noticeBase .first {
+	width: 100%;
+	height: 81px;
+}
+
+.NewsBase .noticeBase .first span {
+	display: block;
+	padding-bottom: 4px;
+	color: #bda179;
+}
+
+.NewsBase .noticeBase .first a {
+	font-size: 14px;
+	color: #333;
+	line-height: 24px;
+}
+
+.NewsBase .noticeBase .first a:hover {
+	color: #ff7544;
+}
+
+.NewsBase .noticeBase .first img {
+	float: left;
+	width: 126px;
+	height: 76px;
+}
+
+.NewsBase .noticeBase .first div {
+	float: left;
+	width: 258px;
+	margin-left: 18px;
+}
+
+.NewsBase .noticeBase ul {
+	margin-top: 6px;
+}
+
+.NewsBase .noticeBase ul li {
+	width: 100%;
+	height: 22px;
+	line-height: 22px;
+	overflow: hidden;
+}
+
+.NewsBase .noticeBase ul li span {
+	padding-right: 12px;
+	color: #bda179;
+}
+
+.NewsBase .noticeBase ul li a:hover {
+	text-decoration: underline;
+}
+
+.doctorsBase {
+	height: 486px;
+	margin-top: 45px;
+	position: relative;
+}
+
+.lt-ie9 .doctorsBase {
+	margin-top: 45px;
+}
+
+.doctorsBase .toolsBase, .officesBase .toolsBase {
+	width: 100%;
+	height: 47px;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+}
+
+.doctorsBase .title, .officesBase .title {
+	float: left;
+	height: 42px;
+	width: 199px;
+	padding-top: 3px;
+	padding-left: 52px;
+	border-bottom: 5px solid #6bcbca;
+	background: url(../images/ico_028.jpg) 7px top no-repeat;
+}
+
+.doctorsBase .tools, .officesBase .tools {
+	width: 455px;
+	height: 35px;
+	position: absolute;
+	top: 0px;
+	right: 6px;
+}
+
+.doctorsBase .tools a, .officesBase .tools a {
+	display: block;
+	position: absolute;
+	top: 0px;
+}
+
+.doctorsBase .tools a.ASwitch, .officesBase .tools a.ASwitch {
+	width: 114px;
+	height: 33px;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid #ddd;
+	left: 0px;
+}
+
+.doctorsBase .tools .search {
+	width: 161px;
+	height: 35px;
+	position: absolute;
+	top: 0px;
+	left: 130px;
+}
+
+.doctorsBase .tools .search .animated {
+	width: 151px;
+	border: 1px solid #ddd;
+	height: 31px;
+	line-height: 35px;
+	padding-left: 8px;
+}
+
+.doctorsBase .tools .search .animated:focus {
+	outline: none;
+	border: 1px solid #6bcbca;
+}
+
+.doctorsBase .tools .search .btn {
+	background: url(../images/ico_030.jpg) center center no-repeat;
+	height: 33px;
+	width: 20px;
+	border: none;
+	position: absolute;
+	top: 1px;
+	right: 5px;
+}
+
+.doctorsBase .tools  a:hover, .officesBase .tools  a:hover {
+	color: #fff;
+	background: #ff7544;
+}
+
+.doctorsBase .tools .Aprev, .officesBase .tools .Aprev {
+	position: absolute;
+	top: 0px;
+	right: 39px;
+	width: 26px;
+	height: 26px;
+	display: block;
+	border: 2px solid #ddd;
+	background: #FFF url(../images/ico_031b.png) center center no-repeat;
+}
+
+.doctorsBase .tools .Aprev:hover, .officesBase .tools .Aprev:hover {
+	background: #ff7544 url(../images/ico_031a.png) center center no-repeat;
+}
+
+.doctorsBase .tools .Anext, .officesBase .tools .Anext {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 26px;
+	height: 26px;
+	display: block;
+	border: 2px solid #ddd;
+	background: #FFF url(../images/ico_032b.png) center center no-repeat;
+}
+
+.doctorsBase .tools .Anext:hover, .officesBase .tools .Anext:hover {
+	background: #ff7544 url(../images/ico_032a.png) center center no-repeat;
+}
+
+.doctorsBase .tools .Amore, .officesBase .tools .Amore {
+	font-size: 14px;
+	color: #6bcbca;
+	width: 50px;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	line-height: 35px;
+	right: 88px;
+}
+
+.doctorsBase .tools .Amore:hover, .officesBase .tools .Amore:hover {
+	color: #ff7544;
+	background: #FFF;
+	text-decoration: underline;
+}
+
+.doctorsBase .title em, .officesBase .title em {
+	font-size: 18px;
+	color: #333;
+	line-height: 32px;
+}
+
+.doctorsBase .title span, .officesBase .title span {
+	padding-left: 3px;
+	color: #6bcbca;
+}
+
+.doctorsBase .contents, .officesBase .contents {
+	width: 1260px;
+	position: absolute;
+	height: 392px;
+	top: 80px;
+	left: 235px;
+	overflow: hidden;
+}
+
+.doctorsBase .contents ul, .officesBase .contents ul {
+	position: absolute;
+	width: 8888px;
+	height: 362px;
+	top: 0px;
+	left: 30px;
+}
+
+.doctorsBase .contents ul li, .officesBase .contents ul li {
+	width: 240px;
+	height: 362px;
+	position: relative;
+	float: left;
+	transition: box-shadow .28s linear;
+	-moz-transition: -moz-box-shadow .28s linear;
+	-webkit-transition: -webkit-box-shadow .28s linear;
+}
+
+.doctorsBase .contents .img {
+	display: block;
+	width: 100%;
+	height: 162px;
+	text-align: center;
+	margin-top: 36px;
+}
+
+.doctorsBase .contents .name {
+	display: block;
+	width: 100%;
+	height: 16px;
+	text-align: center;
+	margin-top: 18px;
+	font-size: 16px;
+	line-height: 16px;
+	color: #978571;
+}
+
+.doctorsBase .contents .office {
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 33px;
+	color: #333;
+}
+
+.doctorsBase .contents .post {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #6e6e6e;
+}
+
+.doctorsBase .contents .btn {
+	display: block;
+	position: absolute;
+	bottom: 35px;
+	width: 68px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+}
+
+.doctorsBase .contents .more {
+	left: 32px;
+	background: #bda179;
+}
+
+.doctorsBase .contents .date {
+	right: 32px;
+	background: #6bcbca;
+}
+
+.doctorsBase .contents .btn:hover {
+	background: #ff7544;
+}
+
+.doctorsBase .contents ul li:hover, .officesBase .contents ul li:hover {
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+	outline: none;
+	-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.doctorsBase .contents ul li:hover .office, .officesBase .contents ul li:hover .office
+	{
+	color: #ff7544;
+}
+
+.doctorsBase .contents div, .officesBase .contents .hackR, .officesBase .contents .hackL
+	{
+	position: absolute;
+	top: 0px;
+	height: 362px;
+	width: 30px;
+}
+
+.doctorsBase .contents .hackR, .officesBase .contents .hackR {
+	right: 0px;
+}
+
+.doctorsBase .contents .hackL, .officesBase .contents .hackL {
+	left: 0px;
+}
+
+.doctorsBase .DFastSearch, .officesBase .OFastSearch {
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	height: 486px;
+	background: #FFF;
+	left: 0px;
+	display: none;
+}
+
+.doctorsBase .DFastSearch .DFTitle, .officesBase .OFastSearch .OFTitle {
+	width: 100%;
+	height: 47px;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+}
+
+.doctorsBase .DFastSearch label, .officesBase .OFastSearch label {
+	position: absolute;
+	top: 7px;
+	left: 0px;
+	font-size: 18px;
+}
+
+.doctorsBase .DFastSearch button, .officesBase .OFastSearch button {
+	position: absolute;
+	width: 114px;
+	height: 33px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 34px;
+	background: #ff7544;
+	text-align: center;
+	border: 1px solid #ddd;
+	top: 0px;
+	right: 0px;
+}
+
+.doctorsBase .DFastSearch button:hover, .officesBase .OFastSearch button:hover
+	{
+	background: #6bcbca;
+}
+
+.doctorsBase .DFastSearch .DFContent {
+	width: 100%;
+	height: 416px;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+}
+
+.doctorsBase .DFastSearch .IndexWords {
+	width: 65px;
+	height: 416px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.doctorsBase .DFastSearch .IndexWords ul {
+	width: 32px;
+	height: 416px;
+	float: left;
+}
+
+.doctorsBase .DFastSearch .IndexWords li {
+	width: 32px;
+	height: 32px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #676767;
+	line-height: 32px;
+	text-align: center;
+	background: #f5f5f5;
+	transition: all .28s linear;
+	-moz-transition: all .28s linear;
+	-webkit-transition: all .28s linear;
+	-o-transition: all .28s linear;
+}
+
+.doctorsBase .DFastSearch .IndexWords li.other {
+	background: #f1f1f1;
+}
+
+.doctorsBase .DFastSearch .IndexWords li:hover, .doctorsBase .DFastSearch .IndexWords li.current
+	{
+	background: #ff7544;
+	color: #fff;
+}
+
+.doctorsBase .DFastSearch .DListBase {
+	width: 1131px;
+	height: 416px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	overflow-x: hidden;
+	-ms-overflow-x: hidden;
+	overflow-y: scroll\9;
+	-ms-overflow-y: scroll\9;
+}
+
+.doctorsBase .DFastSearch .DList {
+	width: 1096px;
+	margin: 0px auto;
+	border-bottom: 1px solid #e7e7e7;
+	padding-bottom: 33px;
+}
+
+.doctorsBase .DFastSearch .DList h6 {
+	font-size: 28px;
+	line-height: 67px;
+	color: #ff7544;
+}
+
+.doctorsBase .DFastSearch .DList ul {
+	border-top: 1px solid #e7e7e7;
+	padding: 6px 0px;
+}
+
+.doctorsBase .DFastSearch .DList li {
+	color: #666;
+	line-height: 21px;
+	margin-top: 20px;
+	padding-top: 6px;
+	position: relative;
+	float: left;
+	padding-left: 5px;
+	width: 132px;
+}
+
+.doctorsBase .DFastSearch .DList .DName {
+	width: 72px;
+	position: relative;
+	height: 21px;
+}
+
+.doctorsBase .DFastSearch .DList .DName .name {
+	font-size: 16px;
+	color: #978571;
+	background: url(../images/ico_013.png) 1px center no-repeat;
+	display: block;
+}
+
+.doctorsBase .DFastSearch .DList li p {
+	width: 96%;
+	overflow: hidden;
+	height: 21px;
+}
+
+.doctorsBase .DFastSearch .DList .DName:hover .name {
+	text-indent: 19px;
+	color: #ff7544;
+	background: url(../images/ico_004.png) 1px center no-repeat;
+}
+
+.doctorsBase .DFastSearch .DList .DName div {
+	width: 265px;
+	height: 133px;
+	position: absolute;
+	z-index: 108;
+	display: none;
+	background: #FFF;
+	padding: 16px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+	outline: none;
+	-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.doctorsBase .DFastSearch .DList li img {
+	width: 99px;
+	height: 133px;
+	position: absolute;
+	top: 16px;
+	left: 16px;
+}
+
+.doctorsBase .DFastSearch .DList li label {
+	position: absolute;
+	display: block;
+	left: 132px;
+	top: 27px;
+	width: 150px;
+	color: #978571;
+}
+
+.doctorsBase .DFastSearch .DList li em {
+	position: absolute;
+	display: block;
+	left: 132px;
+	top: 50px;
+	width: 150px;
+}
+
+.doctorsBase .DFastSearch .DList li span {
+	position: absolute;
+	display: block;
+	left: 132px;
+	top: 71px;
+	width: 150px;
+	color: #8e8e8e;
+}
+
+.doctorsBase .DFastSearch .DList li .date {
+	position: absolute;
+	bottom: 16px;
+	left: 132px;
+	width: 68px;
+	height: 30px;
+	color: #fff;
+	line-height: 32px;
+	text-align: center;
+	background: #bda179;
+}
+
+.doctorsBase .DFastSearch .DList li .more {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	width: 68px;
+	height: 30px;
+	color: #fff;
+	line-height: 32px;
+	text-align: center;
+	background: #6bcbca;
+}
+
+.doctorsBase .DFastSearch .DList .DName div a:hover {
+	background: #ff7544;
+}
+
+.officesBase {
+	height: 450px;
+	margin-top: 25px;
+	position: relative;
+}
+
+.lt-ie9 .officesBase {
+	margin-top: 45px;
+}
+
+.officesBase .title {
+	background: url(../images/ico_029.jpg) 7px top no-repeat;
+}
+
+.officesBase .tools {
+	width: 280px;
+}
+
+.officesBase .contents {
+	top: 93px;
+}
+
+.officesBase .contents ul {
+	height: 320px;
+}
+
+.officesBase .contents ul li {
+	width: 299px;
+	height: 320px;
+	border-right: 1px solid #f5f5f5;
+}
+
+.officesBase .contents i {
+	display: block;
+	width: 26px;
+	height: 44px;
+	position: absolute;
+	top: 0px;
+	right: 29px;
+}
+
+.officesBase .contents i.ico01 {
+	background: url(../images/ico_033.jpg) no-repeat;
+}
+
+.officesBase .contents .img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin: 40px auto 20px auto;
+	background: #6bcbca;
+}
+
+.officesBase .contents .office {
+	font-size: 18px;
+	text-align: center;
+	display: block;
+	color: #978571;
+	margin-bottom: 6px;
+}
+
+.officesBase .contents p {
+	line-height: 22px;
+	width: 208px;
+	text-align: center;
+	margin: 0px auto;
+}
+
+.officesBase .contents .more {
+	position: absolute;
+	bottom: 41px;
+	display: block;
+	text-indent: 18px;
+	width: 99px;
+	height: 29px;
+	line-height: 30px;
+	left: 50px;
+	color: #ff7544;
+	background: url(../images/ico_034.jpg) no-repeat;
+	background-position: 71px center;
+}
+
+.officesBase .contents .doctor {
+	position: absolute;
+	bottom: 41px;
+	display: block;
+	text-indent: 18px;
+	width: 99px;
+	height: 29px;
+	line-height: 30px;
+	right: 50px;
+	color: #0088a8;
+	background: url(../images/ico_035.jpg) no-repeat;
+	background-position: 71px center;
+}
+
+.officesBase .contents .btn:hover {
+	background-position: 79px center;
+}
+
+.officesBase .contents ul li:hover .img {
+	background: #bda179;
+}
+
+.officesBase .hiddenLineR, .officesBase .hiddenLineL {
+	background: #FFF;
+	position: absolute;
+	width: 1px;
+	top: 93px;
+	height: 320px;
+}
+
+.officesBase .hiddenLineR {
+	right: 0px;
+}
+
+.officesBase .hiddenLineL {
+	left: -1px;
+}
+
+.officesBase .OFastSearch {
+	height: 447px;
+}
+
+.officesBase .OFContent {
+	width: 100%;
+	height: 343px;
+	position: absolute;
+	top: 91px;
+	left: 0px;
+	overflow-y: hidden;
+	-ms-overflow-y: hidden;
+	overflow-x: scroll\9;
+	-ms-overflow-x: scroll\9;
+}
+
+.officesBase .OListBase {
+	width: 1440px;
+	height: 343px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.officesBase .OList {
+	width: 219px;
+	height: 288px;
+	float: left;
+	border-right: 1px solid #eee;
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+.officesBase .OList h6 {
+	padding-left: 21px;
+	font-size: 16px;
+	line-height: 16px;
+	color: #6bcbca;
+	background: url(../images/ico_004.png) left 1px no-repeat;
+	margin-bottom: 24px;
+}
+
+.officesBase .OList .item {
+	padding-bottom: 3px;
+	line-height: 12px;
+	height: 20px;
+}
+
+.officesBase .OList span {
+	color: #ff7544;
+	font-size: 16px;
+	padding-right: 8px;
+}
+
+.officesBase .OList a {
+	color: #978571;
+}
+
+.officesBase .OList a:hover {
+	color: #ff7544;
+	text-decoration: underline;
+}
+
+.officesBase .OList .itemHidden {
+	height: 15px;
+	width: 100%;
+}
+
+.othersBase {
+	min-height: 213px;
+}
+
+.othersBase .left {
+	width: 595px;
+	height: 211px;
+	border: 1px solid #ddd;
+	float: left;
+}
+
+.othersBase .left .img {
+	width: 290px;
+	height: 185px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 13px;
+	margin-left: 13px;
+	float: left;
+}
+
+.othersBase .left .Anim {
+	width: 1450px;
+	height: 185px;
+}
+
+.othersBase .left .Anim li {
+	width: 290px;
+	height: 185px;
+	position: relative;
+	float: left;
+}
+
+.othersBase .left .Anim li div {
+	width: 280px;
+	padding-left: 10px;
+	height: 35px;
+	color: #fff;
+	line-height: 35px;
+	background: url(../images/bg02.png);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.othersBase .left .index {
+	height: 8px;
+	width: 43px;
+	position: absolute;
+	right: 0px;
+	bottom: 11px;
+}
+
+.othersBase .left .index li {
+	-moz-opacity: .5;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+	-webkit-opacity: .5;
+	cursor: pointer;
+	background: #FFF;
+	width: 8px;
+	height: 8px;
+	float: left;
+	border-radius: 50%;
+	margin-right: 3px;
+}
+
+.othersBase .left .index li:hover, .othersBase .left .index li.on {
+	-moz-opacity: 1;
+	opacity: 1;
+	filter: alpha(opacity = 100);
+	-webkit-opacity: 1;
+}
+
+.othersBase .left .content {
+	height: 185px;
+	width: 240px;
+	float: right;
+	margin-right: 22px;
+	margin-top: 13px;
+	position: relative;
+}
+
+.othersBase .left h3 {
+	padding-left: 50px;
+	background: url(../images/ico_037.jpg) left center no-repeat;
+	color: #ff7544;
+	font-size: 16px;
+	line-height: 50px;
+	height: 50px;
+}
+
+.othersBase .left p {
+	line-height: 20px;
+	padding-bottom: 5px;
+	color: #535353;
+}
+
+.othersBase .left label {
+	display: block;
+	margin-top: 5px;
+	padding-left: 23px;
+	color: #333;
+	background: url(../images/ico_038.jpg) left center no-repeat;
+}
+
+.othersBase .left a {
+	width: 96px;
+	height: 34px;
+	position: absolute;
+	background: #bda179;
+	right: -1px;
+	bottom: 0px;
+	display: block;
+	line-height: 36px;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+}
+
+.othersBase .left a:hover {
+	background: #ff7544;
+}
+
+.othersBase .right {
+	width: 596px;
+	height: 211px;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	float: right;
+}
+
+.othersBase .right a {
+	width: 297px;
+	height: 105px;
+	display: block;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	float: left;
+}
+
+.othersBase .right a img {
+	position: absolute;
+	top: 22px;
+	left: 26px;
+}
+
+.othersBase .right a em {
+	position: absolute;
+	left: 76px;
+	top: 22px;
+	color: #978571;
+	font-size: 14px;
+}
+
+.othersBase .right a span {
+	position: absolute;
+	left: 76px;
+	top: 45px;
+	color: #666;
+}
+
+.othersBase .right a b {
+	position: absolute;
+	left: 76px;
+	top: 70px;
+	width: 57px;
+	display: block;
+	height: 15px;
+	line-height: 17px;
+	color: #a8a8a8;
+	background: url(../images/ico_040a.png) right center no-repeat;
+}
+
+.othersBase .right a:hover {
+	background: #ff7544;
+}
+
+.othersBase .right a:hover .second {
+	-moz-opacity: 0;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	-webkit-opacity: 0;
+}
+
+.othersBase .right a:hover em {
+	color: #fff;
+}
+
+.othersBase .right a:hover span {
+	color: #fff;
+}
+
+.othersBase .right a:hover b {
+	color: #fff;
+	background: url(../images/ico_040b.png) right center no-repeat;
+}
+
+@media all and (min-width: 1px) and (max-width:1279px) {
+	nav .quickMenuBase {
+		width: 45px;
+	}
+	nav .quickMenus {
+		width: 225px;
+		display: none;
+	}
+	nav .Inav {
+		width: 919px;
+		padding-left: 7px;
+	}
+	nav .Inav .PAMenu {
+		padding: 0px 15px;
+	}
+	nav .quickMenu01 {
+		display: none;
+	}
+	.bannerBase .Banners {
+		left: 0px;
+	}
+	.AnimUl li img {
+		left: 0px;
+	}
+	.bannerBase .tools {
+		right: 0px;
+	}
+	.NewsBase .tools {
+		float: none;
+		width: 100%;
+		height: 122px;
+	}
+	.NewsBase .tools a {
+		width: 236px;
+		margin-right: 12px;
+		margin-top: 2px;
+	}
+	.NewsBase .tools a.last {
+		margin-right: 0px;
+	}
+	.NewsBase .noticeBase {
+		float: none;
+		width: 100%;
+		padding-top: 15px;
+	}
+	.NewsBase .noticeBase .notice {
+		width: 428px;
+	}
+	.doctorsBase .contents, .officesBase .contents {
+		width: 1000px;
+		left: -15px;
+	}
+	.doctorsBase .contents ul, .officesBase .contents ul {
+		left: 17px;
+	}
+	.doctorsBase .contents ul li {
+		margin-right: 6px;
+	}
+	.officesBase .contents ul li {
+		width: 325px;
+	}
+	.officesBase .contents p {
+		width: 243px;
+	}
+	.doctorsBase .contents div, .officesBase .contents .hackR, .officesBase .contents .hackL
+		{
+		width: 15px;
+	}
+	.officesBase .hiddenLineL {
+		left: 1px;
+	}
+	.doctorsBase .DFastSearch .DListBase {
+		width: 916px;
+	}
+	.doctorsBase .DFastSearch .DList {
+		width: 850px;
+	}
+	.doctorsBase .DFastSearch .DList li {
+		width: 135px;
+	}
+	.othersBase .left {
+		width: 100%;
+		float: none;
+	}
+	.othersBase .left .content {
+		width: 608px;
+	}
+	.othersBase .left p {
+		width: 300px;
+	}
+	.othersBase .left a {
+		width: 180px;
+		right: 20px;
+		bottom: 70px;
+	}
+	.othersBase .right {
+		width: 980px;
+		margin-top: 22px;
+		height: 105px;
+		float: none;
+	}
+	.othersBase .right a {
+		width: 244px;
+	}
+	.othersBase .right a img {
+		left: 20px;
+	}
+	.othersBase .right a em {
+		left: 70px;
+	}
+	.othersBase .right a span {
+		left: 70px;
+		width: 152px;
+		line-height: 20px;
+	}
+	.othersBase .right a b {
+		visibility: hidden;
+	}
+}
+
+@media all and (min-width: 1280px) and (max-width:1580px) {
+	nav .quickMenu02 {
+		display: none;
+	}
+}
+
+@media all and (min-width: 1581px) and (max-width:3840px) {
+	nav .quickMenuBase {
+		width: 310px;
+	}
+	nav .quickMenus {
+		width: 310px;
+	}
+	nav .quickMenu02 {
+		display: none;
+	}
+	nav .Inav {
+		width: 1164px;
+		padding-left: 16px;
+	}
+	nav .Inav .PAMenu {
+		padding: 0px 26px;
+	}
+	.bannerBase .Banners {
+		left: 320px;
+	}
+	.bannerBase .tools {
+		right: -200px;
+		background: #6bcbca url(../images/banner_bg.png);
+	}
+	.NewsBase .tools {
+		width: 312px;
+	}
+	.NewsBase .tools a {
+		width: 153px;
+	}
+	.NewsBase .noticeBase {
+		width: 1180px;
+	}
+	.NewsBase .noticeBase .notice {
+		width: 515px;
+		padding: 18px 35px;
+	}
+	.NewsBase .noticeBase .first div {
+		width: 321px;
+		margin-left: 22px;
+	}
+	#BannerSwitch {
+		display: none;
+	}
+	.doctorsBase .contents, .officesBase .contents {
+		width: 1560px;
+	}
+	.doctorsBase .contents ul li {
+		margin-right: 12px;
+	}
+	.doctorsBase .DFastSearch .DListBase {
+		width: 1434px;
+	}
+	.doctorsBase .DFastSearch .DList {
+		width: 1376px;
+	}
+	.othersBase .left {
+		width: 741px;
+	}
+	.othersBase .left .content {
+		width: 375px;
+	}
+	.othersBase .left p {
+		width: 310px;
+	}
+	.othersBase .left a {
+		right: 9px;
+	}
+	.othersBase .right {
+		width: 742px;
+	}
+	.othersBase .right a {
+		width: 370px;
+	}
+	.othersBase .right a img {
+		left: 32px;
+	}
+	.othersBase .right a em, .othersBase .right a span, .othersBase .right a b
+		{
+		left: 90px;
+	}
+}
+#NewBase_Y1{
+	margin: 400px, 20px;
+	font-size:15px;
+	border:1px solid #faab7c;
+	border-radius: 5px;
+	padding: 7px 0px;
+	width: 300px;
+	height:30px;
+}
+
+#NewBase_Y2{
+	height: 50px;
+	width: 100px;
+	margin-left:700px;
+	font-size:15px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	border: 2px solid #f45c1c;
+}
+.table1 span{
+	font-size: 15px;
+}

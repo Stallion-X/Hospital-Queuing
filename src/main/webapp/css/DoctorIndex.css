@@ -1,0 +1,358 @@
+@charset "UTF-8";
+body {
+	margin:0px;
+}
+.left {
+	width:258px;
+	height:2160px;
+	float:left;
+	background-color: rgb(0,102,153);
+	opacity:80%;
+}
+.right {
+	float:left;
+	height:100%;
+}
+.ulbox {
+	width:100%;
+	height:100%;
+}
+.left_ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0,102,153);
+}
+.left_ul li a {
+	width:100%;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 40px 0px 40px;
+	text-decoration: none;
+	transition: background-color 1s;
+	cursor:pointer;
+}
+.left_ul li a:hover {
+	background-color: rgb(54,169,206);
+}
+.left_ul li a.active {
+	color: white;
+	background-color: rgb(54,169,206);
+}
+.right_ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-left:10px;
+	overflow: hidden;
+}
+.right_ul li {
+	padding-left:5px;
+	float: left;
+}
+.right_ul li a {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 16px 40px 16px;
+	text-decoration: none;
+	transition: background-color 0.5s;
+}
+.account li{
+	list-style-type: none;
+	padding-left:0px;
+	float: none;
+}
+.account li a {
+	padding: 5px 0px 5px;
+	text-decoration: none;
+}
+.right_ul li a {
+	border-radius:30px;
+}
+.right_ul li a:hover{
+	background-color: rgb(237,239,240);
+}
+#acc:hover +#acmenu{
+	width:80px;
+	height:80px;
+	visibility:visible;
+	opacity:1;
+}
+#acmenu:hover{
+	width:80px;
+	height:80px;
+	visibility:visible;
+	opacity:1;
+}
+#acmenu a:hover{
+	background-color: white;
+}
+#acmenu {
+	height:0px;
+	width:80px;
+	visibility:hidden;
+	opacity:0;
+	transition: all 0.5s linear;
+	position:fixed;
+	z-index:1000;
+	background-color: white;
+}
+.mid {
+	padding:25px;
+}
+.mid input {
+	border-radius:30px;
+	margin-right:20px;
+	cursor:pointer;
+}
+.mid img{
+	margin-left:10px;
+}
+#midt {
+	margin-right:390px;
+}
+#search {
+	border-radius:30px;
+	margin-right:20px;
+	cursor:pointer;
+	margin-right:10px;
+	background-image:url(../img/search.png);
+	background-position: 145px;
+    background-repeat:no-repeat;
+}
+#b1 {
+	color:white;
+	background-color:rgb(43,140,241);
+	border:none;
+	width:80px;
+	height:30px;
+}
+#b2 {
+	color:white;
+	background-color:rgb(118,189,203);
+	border:none;
+	width:80px;
+	height:30px;
+}
+#b3 {
+	color:white;
+	background-color:rgb(142,162,205);
+	border:none;
+	width:80px;
+	height:30px;
+}
+#b4 {
+	color:white;
+	background-color:rgb(215,185,156);
+	border:none;
+	width:80px;
+	height:30px;
+}
+#b5 {
+	color:white;
+	background-color:rgb(118,189,203);
+	border:none;
+	width:80px;
+	height:30px;
+}
+.tab table {
+	margin-left:30px;
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	background-color:rgb(236,236,236);
+	text-align:center;
+}
+tbody {
+	overflow-y: scroll;
+}
+.tab>tbody>tr,.tab>thead{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.hd {
+	height:80px;
+	font-weight:bold
+}
+.cont {
+	height:40px;
+	background-color:white;
+}
+.tab a {
+	padding:5px;
+	text-align:center;
+	text-decoration:none;
+	border-radius:30px;
+	font-size:10pt;
+	cursor:pointer;
+}
+.cont td:hover {
+	background-color: #daf4f4;
+	color: rgb(133,201,211);
+	font-weight: bold;
+	box-shadow: rgb(133,201,211) -1px 1px, rgb(133,201,211) -2px 2px, rgb(133,201,211) -3px 3px, rgb(133,201,211) -4px 4px, rgb(133,201,211) -5px 5px, rgb(133,201,211) -6px 6px;
+	transform: translate3d(6px, -6px, 0);
+	transition-delay: 0s;
+	transition-duration: 0.4s;
+	transition-property: all;
+	transition-timing-function: line;
+}
+.op1 {
+	color:rgb(255,105,106);
+	background-color:rgb(255,220,220);
+}
+.op2 {
+	color:rgb(133,201,211);
+	background-color:rgb(218,244,244);
+}
+#inputedit{
+	border: 1px solid;
+	background-color: rgb(0,102,153);
+	opacity:80%;
+	color:white;
+	position:absolute;
+	width:280px;
+	height:400px;
+	z-index: 20;
+	left:700px;
+	top:140px;
+	text-align: center;
+	visibility:hidden;
+}
+#inputedit input{
+	margin:10px 0px 10px;
+}
+#inputnewdrug{
+	border: 1px solid;
+	background-color: rgb(0,102,153);
+	opacity:80%;
+	color:white;
+	position:absolute;
+	width:280px;
+	height:380px;
+	z-index: 20;
+	left:700px;
+	top:140px;
+	text-align: center;
+	visibility:hidden;
+}
+#inputnewdrug input{
+	margin:10px 0px 10px;
+}
+#inputnewmexam{
+	border: 1px solid;
+	background-color: rgb(0,102,153);
+	opacity:80%;
+	color:white;
+	position:absolute;
+	width:300px;
+	height:260px;
+	z-index: 20;
+	left:700px;
+	top:140px;
+	text-align: center;
+	visibility:hidden;
+}
+#inputnewmexam input{
+	margin:10px 0px 10px;
+}
+.bkg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 3;
+  visibility:hidden;
+}
+#hangon span {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: transparent;
+  text-shadow:
+    0px 0px 1px rgba(255, 255, 255, .6),
+    0px 4px 4px rgba(0, 0, 0, .05);
+  letter-spacing: .2rem;
+}
+#transfer{
+	border: 1px solid;
+	background-color: rgb(0,102,153);
+	opacity:80%;
+	color:white;
+	position:absolute;
+	width:300px;
+	height:150px;
+	z-index: 20;
+	left:700px;
+	top:140px;
+	text-align: center;
+	visibility:hidden;
+}
+#transfer input{
+	margin:10px 0px 10px;
+}
+#blob {
+	top: 89px;
+	z-index: -1;
+	left:0;
+	transform: translateX(100%);
+	height: 100%;
+	position: absolute;
+	visibility:hidden;
+}
+#blob-path {
+	height: 100%;
+	fill: rgb(0,102,153);
+}
+.tooltip {
+  visibility: hidden;
+  z-index: 1;
+  opacity: .40;
+  width: 260px;
+  padding: 0px 20px;
+  background: #3385ad;
+  color:white;
+  position: absolute;
+  top:-140%;
+  left: -25%;
+  border-radius: 9px;
+  font: 16px;
+  transform: translateY(9px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+}
+.bottom .tooltip { top:115%; left:-20%; }
+.bottom:hover {transform: translateY(6px);}
+.bottom .tooltip::after{
+  top:-17%;
+  left:40%;
+  transform: rotate(180deg);
+}
+.infotd:hover .tooltip{
+  visibility: visible;
+  transform: translateY(-10px);
+  opacity: 0.9;
+  transition: .3s linear;
+  animation: odsoky 1s ease-in-out infinite  alternate;
+}
+@keyframes odsoky {
+  0%{
+    transform: translateY(6px);	
+  }
+
+  100%{
+    transform: translateY(1px);	
+  }
+
+}
