@@ -1,3 +1,4 @@
+<https://149.104.20.115:10659/HospitalTest/>
 # Hospital-Queuing
 A school assignment(experiment) for JSP, a simple hospital queuing Web system made by pure JSP,HTML,CSS,Javascript without any framework.
 
