@@ -14,7 +14,7 @@ Web、软件工程、数据库课程群大作业，医院排队叫号系统。
 
 初学Web成果，十分简陋，连界面都是纯HTML手撸，一个人手撸了半个月，还是不太完善，放在这就当纪念一下了，有空可能还会来完善一下。
 
-数据库配置在`/src/main/java/db/ConnBean.java（H2）`和`MsSQLConnBean.java（SQL Server）` 默认数据库为H2，需要在`D:\h2db2`目录下配置好H2数据库，导入初始化SQL（Database.sql和Insert.sql），或者可在`ConnBean.java`中`private String database="D:/h2db2/hospital";`处自行更改路径
+数据库配置在`/src/main/java/db/ConnBean.java`（H2）和`MsSQLConnBean.java`（SQL Server） 默认数据库为H2，需要在`D:\h2db2`目录下配置好H2数据库，导入初始化SQL（Database.sql和Insert.sql），或者可在`ConnBean.java`中`private String database="D:/h2db2/hospital";`处自行更改路径
 
 编码从Eclipse默认的GBK改为了UTF-8
 
