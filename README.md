@@ -14,8 +14,10 @@ A school assignment(experiment) for JSP, a simple hospital queuing Web system ma
 
 初学Web成果，十分简陋，连界面都是纯HTML手撸，一个人手撸了半个月，还是不太完善，放在这就当纪念一下了，有空可能还会来完善一下。
 
-数据库配置在/src/main/java/db/ConnBean.java（H2）和MsSQLConnBean.java（SQL Server） 默认数据库为H2，需要存在D:\h2db2目录，可在`ConnBean.java`中`private String database="D:/h2db2/hospital";`处自行更改
+数据库配置在/src/main/java/db/ConnBean.java（H2）和MsSQLConnBean.java（SQL Server） 默认数据库为H2，需要在D:\h2db2目录下配置好H2数据库，导入初始化SQL（Database.sql和Insert.sql），或者可在`ConnBean.java`中`private String database="D:/h2db2/hospital";`处自行更改路径
 
 编码从Eclipse默认的GBK改为了UTF-8
 
 部署必须采用Tomcat 10及以上（包名已经更改为jakarta，除非你手动改回javax） 默认项目结构也是Eclipse，如果想用IDEA打开需要在Project Structure-Module里面自行调整
+
+管理员密钥为服务器每次启动时随机生成，访问`RandomAdminKey.jsp`获取
