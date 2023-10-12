@@ -24,4 +24,4 @@ A school assignment(experiment) for JSP, a simple hospital queuing Web system ma
 
 如果想用IDEA打开需要在Project Structure-Module里面自行Import Module，建议把Dependencies storage format改为.iml，然后删掉没用的包，修改JDK路径，添加Tomcat 10 Library，再把WEB-INF/lib下的包都添加一遍，添加Facets-选择Web，去掉Descriptor，修改Web Resource Directory为webapp目录，再右下角Create Artifact，Fix几次就ok了
 
-由于改IDEA项目结构有点麻烦，放了一个改好的能直接跑的IDEA项目配置文件上来，但是Tomcat服务器的目录可能需要自己修改
+由于改IDEA项目结构有点麻烦，放了一个改好的能直接跑的IDEA项目配置文件上来，但是Tomcat服务器的目录可能需要在Run-Edit Configurations处自己修改
