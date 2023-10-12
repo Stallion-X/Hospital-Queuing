@@ -17,3 +17,5 @@ A school assignment(experiment) for JSP, a simple hospital queuing Web system ma
 数据库配置在/src/main/java/db/ConnBean.java（H2）和MsSQLConnBean.java（SQL Server）
 
 编码从Eclipse默认的GBK改为了UTF-8
+
+部署必须采用Tomcat 10及以上（包名已经更改为jakarta，除非你手动改回javax） 默认项目结构也是Eclipse，如果想用IDEA打开需要在Project Structure-Module里面自行调整
