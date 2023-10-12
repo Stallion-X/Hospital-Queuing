@@ -1,7 +1,7 @@
 create table doctor(
 dnum varchar(20) primary key,
 dname varchar(50) not null,
-dsex varchar(10) check(dsex in('ÄĞ','Å®')),
+dsex varchar(10) check(dsex in('ç”·','å¥³')),
 dage int check(dage >= 30 and dage <= 100),
 dtel char(11) not null,
 dtitle varchar(20),
@@ -14,7 +14,7 @@ dcon varchar(20) not null
 create table patient(
 pnum varchar(20) primary key,
 pname varchar(50) not null,
-psex varchar(10) check(psex in ('ÄĞ','Å®')),
+psex varchar(10) check(psex in ('ç”·','å¥³')),
 page int check(page >= 0 and page <= 100),
 pid char(18) unique,
 ptel char(11) not null,

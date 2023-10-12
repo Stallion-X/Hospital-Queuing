@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="HospitalTest:Web exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/HospitalTest_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="HospitalTest/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="HospitalTest" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/sqljdbc4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/passay-1.6.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/h2-2.1.212.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/fastjson-1.2.83.jar" />
+          <element id="library" level="module" name="jakarta.servlet.jsp.jstl-api-2.0.0.jar" module-name="HospitalTest" />
+          <element id="library" level="module" name="taglibs-standard-spec-1.2.5.jar" module-name="HospitalTest" />
+          <element id="library" level="module" name="taglibs-standard-impl-1.2.5.jar" module-name="HospitalTest" />
+          <element id="library" level="module" name="jakarta.servlet.jsp.jstl-2.0.0.jar" module-name="HospitalTest" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
